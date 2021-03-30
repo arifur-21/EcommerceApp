@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "583448357602",
+    "firebase_url": "https://foodproject-111fe-default-rtdb.firebaseio.com",
+    "project_id": "foodproject-111fe",
+    "storage_bucket": "foodproject-111fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583448357602:android:a82f7ecfeb9b8a73d90cbb",
+        "android_client_info": {
+          "package_name": "com.example.foodproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583448357602-n252rn1ggom47k421nco0atnnehuep5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHLzKz6XFkqWfM3CJkAvlvvnKuKulh7yY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583448357602-n252rn1ggom47k421nco0atnnehuep5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.foodproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_productDeatils"
+            app:destination="@id/productDeatils" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.foodproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.foodproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.foodproject.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.foodproject.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_productCategory"
+            app:destination="@id/productCategory" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productCategory"
+        android:name="com.example.foodproject.ProductCategory"
+        android:label="fragment_product_category"
+        tools:layout="@layout/fragment_product_category" >
+        <action
+            android:id="@+id/action_productCategory_to_addNewProducg"
+            app:destination="@id/addNewProducg" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewProducg"
+        android:name="com.example.foodproject.AddNewProducg"
+        android:label="fragment_add_new_producg"
+        tools:layout="@layout/fragment_add_new_producg" />
+    <fragment
+        android:id="@+id/productDeatils"
+        android:name="com.example.foodproject.ProductDeatils"
+        android:label="fragment_product_deatils"
+        tools:layout="@layout/fragment_product_deatils" >
+        <action
+            android:id="@+id/action_productDeatils_to_customarInformation"
+            app:destination="@id/customarInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/customarInformation"
+        android:name="com.example.foodproject.CustomarInformation"
+        android:label="fragment_customar_information"
+        tools:layout="@layout/fragment_customar_information" >
+        <action
+            android:id="@+id/action_customarInformation_to_cardFragment"
+            app:destination="@id/cardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.example.foodproject.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+</navigation>
